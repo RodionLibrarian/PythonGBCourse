@@ -1,7 +1,7 @@
 file = open('taskone.txt', 'w', encoding='utf-8')
 line = input('Enter text: ')
 while line:
-    file.writelines(line)
+    file.writelines(line + '\n')
     line = input('Enter text: ')
     if not line:
         break
